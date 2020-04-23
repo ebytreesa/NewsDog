@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Newsdog.Pages.TesstingPage">
+
+    <RelativeLayout>
+
+        <BoxView  Color="red" x:Name="redBox"
+              RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
+                Property=Height, Factor=.15,Constant=0}"
+              RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+                Property=Width, Factor=1, Constant=0}"
+              RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+                Property=Height, Factor=.8, Constant=0}" />
+
+        <BoxView  Color="blue" x:Name="blueBox"
+              RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, 
+                ElementName=redBox,Property=Y, Factor=1,Constant=20}"
+              RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, 
+                ElementName=redBox,Property=X, Factor=1,Constant=20}"
+              RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, 
+                ElementName=redBox,Property=Width, Factor=.5,Constant=0}"
+              RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+                Property=Height, Factor=.5, Constant=0}" />
+    </RelativeLayout>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

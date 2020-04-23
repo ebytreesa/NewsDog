@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="Newsdog.Pages.TrendingPage">
+    
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Command="{StaticResource RefreshNewsCommand}" CommandParameter="Trending" Text="Refresh" Order="Primary" Icon="icon_refresh.png"/>
+        </ContentPage.ToolbarItems>
+
+    <ListView ItemTapped="OnItemTapped" IsRefreshing="{Binding IsBusy}" SeparatorVisibility="None" x:Name="newsListView" HasUnevenRows="True" ItemsSource="{Binding TrendingNews}" Margin="20">
+
+        <!--<ListView ItemSelected="newsListView_ItemSelected" SeparatorVisibility="None" x:Name="newsListView" Margin="20" HasUnevenRows="True"
+                      ItemTapped="newsListView_ItemTapped"
+                      IsRefreshing="{Binding IsBusy}" ItemsSource="{Binding TrendingNews}">-->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <controls:CircleImage Grid.RowSpan="4"  WidthRequest="80"  HeightRequest="80" Source="{Binding ImageUrl}" Aspect="AspectFill" />
+                                <!--<Image Margin="5" HeightRequest="100" WidthRequest="100" Grid.RowSpan="2" Source="{Binding ImageUrl}"/>-->
+                                <Label Style="{DynamicResource ListTitleStyle}" Grid.Column="1" Grid.Row="0" Text="{Binding Title}"/>
+                                <Label Style="{DynamicResource ListDescriptionStyle}"  Grid.Column="1" Grid.Row="1" Text="TOPIC:"/>
+                                <Label  Style="{DynamicResource ListDescriptionStyle}"  Grid.Column="1" Grid.Row="2" Text="{Binding Description}"/>
+
+                                <Label VerticalOptions="Start" Margin="0,5" FontSize="Micro" Grid.Column="1" Grid.Row="3" Text="{Binding CreatedDate, Converter={StaticResource AgoLabelConverter}}" />
+
+                        <!--<Label  Style="{DynamicResource ListTitleStyle}"  Grid.Column="1" Grid.Row="2" Text="{Binding CreatedDate}"/>-->
+                                <!--<Button StyleClass="Small" Grid.Column="1" Grid.Row="2"/>-->
+                            </Grid>
+                        </ViewCell>
+                        <!--<ImageCell DetailColor="Gray" TextColor="black" ImageSource="{Binding ImageUrl}"
+                                   Text="{Binding Title}" Detail="{Binding Description}"/>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+</ContentPage>

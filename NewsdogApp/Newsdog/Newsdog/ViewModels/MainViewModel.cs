@@ -14,6 +14,8 @@ namespace Newsdog.ViewModels
         public MainViewModel()
         {
             this.TrendingNews = new ObservableCollection<News.NewsInformation>();
+            this.Favorites = new FavoritesCollection();
+
             this.CurrentUser = new UserInformation
             {
                 DisplayName = "Eby",
@@ -65,6 +67,14 @@ namespace Newsdog.ViewModels
             set { this.SetProperty(ref this.currentUser, value); }
         }
 
+        private FavoritesCollection _favorites;
+        public FavoritesCollection Favorites
+        {
+            get { return this._favorites; }
+            set { this.SetProperty(ref this._favorites, value); }
+        }
+
+
 
         public async void RefreshNewsAsync()
         {
@@ -82,5 +92,22 @@ namespace Newsdog.ViewModels
                 this.TrendingNews.Add(item);
             }
         }
+
+        //public async Task RefreshFavoritesAsync()
+        //{
+        //    this.IsBusy = true;
+
+        //    this.Favorites.Clear();
+
+        //    var favorites = await FavoritesManager.DefaultManager.GetFavoritesAsync();
+
+        //    foreach (var favorite in favorites)
+        //    {
+        //        this.Favorites.Add(favorite.AsFavorite("Technology"));
+        //    }
+
+        //    this.IsBusy = false;
+        //}
+
     }
 }

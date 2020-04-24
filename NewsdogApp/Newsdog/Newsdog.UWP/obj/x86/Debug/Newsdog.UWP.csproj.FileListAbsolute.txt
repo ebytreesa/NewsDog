@@ -321,3 +321,9 @@ C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\bin\x86\D
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\bin\x86\Debug\ImageCircle.Forms.Plugin.dll
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\obj\x86\Debug\Plugin.Connectivity.pri.xml
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\obj\x86\Debug\ImageCircle.Forms.Plugin.pri.xml
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\bin\x86\Debug\SQLite-net.dll
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\bin\x86\Debug\SQLitePCLRaw.core.dll
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\bin\x86\Debug\e_sqlite3.dll
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\bin\x86\Debug\SQLitePCLRaw.provider.e_sqlite3.dll

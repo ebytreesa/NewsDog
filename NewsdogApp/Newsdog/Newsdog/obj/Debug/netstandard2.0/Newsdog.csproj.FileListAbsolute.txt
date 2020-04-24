@@ -15,9 +15,10 @@ C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\net
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\Page2.xaml.g.cs
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\SettingsPage.xaml.g.cs
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\TrendingPage.xaml.g.cs
-C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Newsdog.csproj.CoreCompileInputs.cache
-C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\testingPage.xaml.g.cs
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\TechnologyPage.xaml.g.cs
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\TesstingPage.xaml.g.cs
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\ItemDetailPage.xaml.g.cs
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\FavouritesPage.xaml.g.cs
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Newsdog.csproj.CoreCompileInputs.cache
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\XamlC.stamp

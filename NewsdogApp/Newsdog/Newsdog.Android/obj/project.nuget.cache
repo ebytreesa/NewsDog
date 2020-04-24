@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "HMlAXwUV7DK0o/27OgUj4nvfytaZXwRhHaGCtnUMKp/DbPZAa6hh42/HrdDgWv1kPbcOJRu8RbpklskPIslzAA==",
+  "dgSpecHash": "ZlM9hxeuYxyGw4oMmS8+nfFtZrVyRvCWKi82m3tlOw/ObCLgOHT5gQ8yaOPWm32g5zdzL+YGAA/v+UHyU83lRw==",
   "success": true,
   "projectFilePath": "C:\\Users\\eby\\Desktop\\Xamarin\\NewsdogApp\\NewsdogApp\\Newsdog\\Newsdog.Android\\Newsdog.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eby\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlite-net-pcl\\1.6.292\\sqlite-net-pcl.1.6.292.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.13\\sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\1.1.13\\sqlitepclraw.lib.e_sqlite3.android.1.1.13.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3.android\\1.1.13\\sqlitepclraw.provider.e_sqlite3.android.1.1.13.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",

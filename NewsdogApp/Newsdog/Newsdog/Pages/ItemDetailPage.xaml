@@ -5,7 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Newsdog.Pages.ItemDetailPage">
-    <ContentPage.Content>
+        <ContentPage.ToolbarItems>
+            <ToolbarItem  Command="{StaticResource ToggleFavoriteCommand}" CommandParameter="{Binding}" Text="Add to Favorites" Icon="icon_favorites.png" Order="Secondary" />
+        </ContentPage.ToolbarItems>
         <StackLayout Margin="40">
 
             <Image VerticalOptions="Center" 
@@ -21,5 +23,4 @@
 
         </StackLayout>
 
-    </ContentPage.Content>
 </ContentPage>

@@ -30,7 +30,8 @@ namespace Newsdog
 
             App.MainNavigation = Navigation;
 
-             //var label =  Helpers.GeneralHelper.GetLabel();
+            //var label =  Helpers.GeneralHelper.GetLabel();
+            var databasePath = Helpers.StorageHelper.GetLocalFilePath();
             
 
             base.OnAppearing();

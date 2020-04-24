@@ -63,6 +63,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DpendenyServices\DeviceOrientation.cs" />
+    <Compile Include="DpendenyServices\FileHelper.cs" />
     <Compile Include="DpendenyServices\PlatformLabel.cs" />
     <Compile Include="DpendenyServices\TextSpeecher.cs" />
     <Compile Include="Main.cs" />

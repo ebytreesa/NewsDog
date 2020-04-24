@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bPABgLu9VgDdQyGVWlVfOWAfJnnWsu664ekwY9g8YLHb8KrMzDr8GSeoimLOejO4LRucT5ZVHcZmFAmeQE5CIQ==",
+  "dgSpecHash": "S0ESNV7INtVksnx92Uen/zRK9sfhzirv4t9TDibhh6fR4g5RGFwxns24xVqB8ip2aN1aRFamvX197jEXFzH28w==",
   "success": true,
   "projectFilePath": "C:\\Users\\eby\\Desktop\\Xamarin\\NewsdogApp\\NewsdogApp\\Newsdog\\Newsdog.UWP\\Newsdog.UWP.csproj",
   "expectedPackageFiles": [
@@ -74,6 +74,11 @@
     "C:\\Users\\eby\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.1.2\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.1.2.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.1.9\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlite-net-pcl\\1.6.292\\sqlite-net-pcl.1.6.292.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.13\\sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlitepclraw.core\\1.1.13\\sqlitepclraw.core.1.1.13.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.v140\\1.1.13\\sqlitepclraw.lib.e_sqlite3.v140.1.1.13.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3.uwp10\\1.1.13\\sqlitepclraw.provider.e_sqlite3.uwp10.1.1.13.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

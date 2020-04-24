@@ -93,6 +93,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DpendenyServices\DeviceOrientation.cs" />
+    <Compile Include="DpendenyServices\FileHelper.cs" />
     <Compile Include="DpendenyServices\PlatformLabel.cs" />
     <Compile Include="DpendenyServices\TextSpeecher.cs" />
     <Compile Include="MainPage.xaml.cs">

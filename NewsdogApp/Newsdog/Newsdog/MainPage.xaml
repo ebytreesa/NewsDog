@@ -16,7 +16,7 @@
     <TabbedPage.Children>
         <pages:TrendingPage Title="TRENDING"/>
         <pages:TrendingPage Title="WORLD"/>
-        <pages:TechnologyPage Title="TECHNOLOGY"/>
+        <!--<pages:TechnologyPage Title="TECHNOLOGY"/>-->
         <pages:FavouritesPage Icon="icon_favorites.png" Title="Favs"/>
         
 

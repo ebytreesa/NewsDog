@@ -66,8 +66,11 @@
     <Compile Include="DpendenyServices\FileHelper.cs" />
     <Compile Include="DpendenyServices\PlatformLabel.cs" />
     <Compile Include="DpendenyServices\TextSpeecher.cs" />
+    <Compile Include="Helpers\ColorHelper.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renders\AccentButtonColorRender.cs" />
+    <Compile Include="Renders\CircleImageRender.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,5 +145,7 @@
       <Name>Newsdog</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Effects\" />
+  </ItemGroup>
 </Project>

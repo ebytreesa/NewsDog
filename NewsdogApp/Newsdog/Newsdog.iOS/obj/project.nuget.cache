@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "sOefTRPakf/ErG8PMztx18wrTOmxgLepBiTb9CXIy/839FVxAOOn7I56hpI/dSKYXeAU06HMndBmGIgv5+QmUw==",
+  "dgSpecHash": "7UCsi7hqGEZhcaKcRFcw80KrF/Xi9JIMbTDB1h0W0jKAGbre1QqUk2Grk1+JWkrW+4San6Nm+1IFNe9IZScXjg==",
   "success": true,
   "projectFilePath": "C:\\Users\\eby\\Desktop\\Xamarin\\NewsdogApp\\NewsdogApp\\Newsdog\\Newsdog.iOS\\Newsdog.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\eby\\.nuget\\packages\\microsoft.toolkit\\6.0.0\\microsoft.toolkit.6.0.0.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\microsoft.toolkit.parsers\\6.0.0\\microsoft.toolkit.parsers.6.0.0.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\sqlite-net-pcl\\1.6.292\\sqlite-net-pcl.1.6.292.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.13\\sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",

@@ -5,6 +5,8 @@ public class MonoPackageManager_Resources {
 		"Newsdog.Android.dll",
 		"FormsViewGroup.dll",
 		"ImageCircle.Forms.Plugin.dll",
+		"Microsoft.Toolkit.dll",
+		"Microsoft.Toolkit.Parsers.dll",
 		"Newsdog.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.Connectivity.Abstractions.dll",

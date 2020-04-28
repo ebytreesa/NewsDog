@@ -11,9 +11,12 @@ namespace Newsdog.ViewModels
     public class MainViewModel:ObservableBase
     {
 
+       
         public MainViewModel()
         {
             this.TrendingNews = new ObservableCollection<News.NewsInformation>();
+            this.SearchResults = new ObservableCollection<News.NewsInformation>();
+
             this.Favorites = new FavoritesCollection();
 
             this.CurrentUser = new UserInformation
@@ -22,8 +25,25 @@ namespace Newsdog.ViewModels
                 BioContent = "",
                 ProfileImageUrl = "https://www.thespruce.com/thmb/LCyupmFhZf0tXxj6TpBwWS6ZSfo=/3867x2578/filters:fill(auto,1)/GettyImages-153342142-56a75f045f9b58b7d0e9bee6.jpg"
             };
+            this.SearchQuery = "Microsoft";
 
         }
+
+        private string searchQuery;
+        public string SearchQuery
+        {
+            get { return this.searchQuery; }
+            set { this.SetProperty(ref this.searchQuery, value); }
+        }
+
+        private ObservableCollection<News.NewsInformation> _searchResults;
+        public ObservableCollection<News.NewsInformation> SearchResults
+        {
+            get { return this._searchResults; }
+            set { this.SetProperty(ref this._searchResults, value); }
+        }
+
+
         private ObservableCollection<News.NewsInformation> trendingnews;
         public ObservableCollection<News.NewsInformation> TrendingNews
         {
@@ -93,21 +113,41 @@ namespace Newsdog.ViewModels
             }
         }
 
-        //public async Task RefreshFavoritesAsync()
-        //{
-        //    this.IsBusy = true;
+        public async Task RefreshSearchResults()
+        {
+            this.IsBusy = true;
 
-        //    this.Favorites.Clear();
+            this.SearchResults.Clear();
 
-        //    var favorites = await FavoritesManager.DefaultManager.GetFavoritesAsync();
+            string query = this.SearchQuery;
 
-        //    foreach (var favorite in favorites)
-        //    {
-        //        this.Favorites.Add(favorite.AsFavorite("Technology"));
-        //    }
+            var news = await Helpers.NewsHelper.SearchAsync(query);
 
-        //    this.IsBusy = false;
-        //}
+            foreach (var item in news)
+            {
+                this.SearchResults.Add(item);
+            }
+
+            this.IsBusy = false;
+        }
+
+
+        public async Task RefreshFavoritesAsync()
+        {
+            this.IsBusy = true;
+
+            this.Favorites.Clear();
+
+            var favorites = await App.Database.GetItemsAsync();
+            //var favorites = await FavoritesManager.DefaultManager.GetFavoritesAsync();
+
+            foreach (var favorite in favorites)
+            {
+                this.Favorites.Add(favorite.AsFavorite("Technology"));
+            }
+
+            this.IsBusy = false;
+        }
 
     }
 }

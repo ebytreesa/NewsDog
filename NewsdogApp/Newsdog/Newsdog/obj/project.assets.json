@@ -20,6 +20,27 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.Toolkit/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
+        }
+      },
+      "Microsoft.Toolkit.Parsers/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Toolkit": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -917,6 +938,34 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.Toolkit/6.0.0": {
+      "sha512": "ls2eYY28kEwcZPt8oAvXt0LsuRnKpj5DuV5W55bjETsk5EYl+LARiF4BBO7WVGsZ78q+6u9AS8atMeFX3FjXxA==",
+      "type": "package",
+      "path": "microsoft.toolkit/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Toolkit.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.xml",
+        "microsoft.toolkit.6.0.0.nupkg.sha512",
+        "microsoft.toolkit.nuspec"
+      ]
+    },
+    "Microsoft.Toolkit.Parsers/6.0.0": {
+      "sha512": "ygJcXIukirGJPC225RG0RhlqfTiuPDk99nDO9+5DrXlI3UOBG8ZLtHDemvdCaaqar+AQOpIyekJdwa9ViRVbYA==",
+      "type": "package",
+      "path": "microsoft.toolkit.parsers/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll",
+        "lib/netstandard2.0/Microsoft.Toolkit.Parsers.pdb",
+        "lib/netstandard2.0/Microsoft.Toolkit.Parsers.xml",
+        "microsoft.toolkit.parsers.6.0.0.nupkg.sha512",
+        "microsoft.toolkit.parsers.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -3601,6 +3650,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Microsoft.Toolkit.Parsers >= 6.0.0",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3",
       "System.Net.Http >= 4.3.4",
@@ -3655,6 +3705,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "Microsoft.Toolkit.Parsers": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",

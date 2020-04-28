@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "S0ESNV7INtVksnx92Uen/zRK9sfhzirv4t9TDibhh6fR4g5RGFwxns24xVqB8ip2aN1aRFamvX197jEXFzH28w==",
+  "dgSpecHash": "IKCpK0WVvQYOVU0cwkgew8mAim1xO3Q386c99SgGq94i7fKRaObHgzWhx0Tf1Gktw02vD+F+F4NExPuJ+6uc0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\eby\\Desktop\\Xamarin\\NewsdogApp\\NewsdogApp\\Newsdog\\Newsdog.UWP\\Newsdog.UWP.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\eby\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\microsoft.netcore.universalwindowsplatform\\6.1.9\\microsoft.netcore.universalwindowsplatform.6.1.9.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\microsoft.toolkit\\6.0.0\\microsoft.toolkit.6.0.0.nupkg.sha512",
+    "C:\\Users\\eby\\.nuget\\packages\\microsoft.toolkit.parsers\\6.0.0\\microsoft.toolkit.parsers.6.0.0.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\microsoft.ui.xaml\\2.1.190606001\\microsoft.ui.xaml.2.1.190606001.nupkg.sha512",
     "C:\\Users\\eby\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

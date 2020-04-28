@@ -13,6 +13,7 @@ namespace Newsdog.Helpers
             List<NewsCategory> categories = new List<NewsCategory>();
 
             categories.Add(new NewsCategory() { Title = "Technology", InternalName = "Technology" });
+            categories.Add(new NewsCategory() { Title = "Trending", InternalName = "Trending" });
             categories.Add(new NewsCategory() { Title = "Business", InternalName = "Business" });
             categories.Add(new NewsCategory() { Title = "Entertainment", InternalName = "Entertainment" });
             categories.Add(new NewsCategory() { Title = "Health", InternalName = "Health" });

@@ -27,7 +27,7 @@ namespace Newsdog.Pages
         {
             this.BindingContext = App.ViewModel;
 
-            //await App.ViewModel.RefreshFavoritesAsync();
+            await App.ViewModel.RefreshFavoritesAsync();
         }
 
         private void OnItemTapped(object sender, ItemTappedEventArgs e)

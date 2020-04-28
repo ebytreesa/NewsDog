@@ -31,5 +31,10 @@ namespace Newsdog.Pages
 
             base.OnAppearing();
         }
+        public ItemDetailPage(FavoriteInformation currentArticle)
+        {
+            InitializeComponent();
+            this.CurrentArticle = currentArticle.AsArticle();
+        }
     }
 }

@@ -28,6 +28,12 @@
     <AppxPackagedFile Include="C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog.UWP\bin\x86\Debug\Newsdog.UWP.exe">
       <PackagePath>entrypoint\Newsdog.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eby\.nuget\packages\microsoft.toolkit\6.0.0\lib\netstandard2.0\Microsoft.Toolkit.dll">
+      <PackagePath>Microsoft.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\eby\.nuget\packages\microsoft.toolkit.parsers\6.0.0\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
+      <PackagePath>Microsoft.Toolkit.Parsers.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eby\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>

@@ -5,17 +5,33 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace Newsdog.ViewModels
 {
     public class MainViewModel:ObservableBase
     {
-
-       
+        private bool isFilterOn;
+        public bool IsFilterOn
+        {
+            get => Preferences.Get(nameof(IsFilterOn), this.isFilterOn);
+            set
+            {               
+                Preferences.Set(nameof(IsFilterOn), value);
+                 //this.SetProperty(ref this.isFilterOn, value); 
+                OnPropertyChanged(nameof(IsFilterOn));
+            }
+        }
+        //public bool IsFilterOn
+        //{
+        //    get { return this.isFilterOn; }
+        //    set { this.SetProperty(ref this.isFilterOn, value); }
+        //}
         public MainViewModel()
         {
             this.TrendingNews = new ObservableCollection<News.NewsInformation>();
             this.SearchResults = new ObservableCollection<News.NewsInformation>();
+            this.FilteredNews = new ObservableCollection<News.NewsInformation>();
 
             this.Favorites = new FavoritesCollection();
 
@@ -49,6 +65,13 @@ namespace Newsdog.ViewModels
         {
             get { return this.trendingnews; }
             set { this.SetProperty(ref this.trendingnews, value); }
+        }
+
+        private ObservableCollection<News.NewsInformation> filteredNews;
+        public ObservableCollection<News.NewsInformation> FilteredNews
+        {
+            get { return this.filteredNews; }
+            set { this.SetProperty(ref this.filteredNews, value); }
         }
 
         private string _platformLabel;
@@ -99,14 +122,34 @@ namespace Newsdog.ViewModels
         public async void RefreshNewsAsync()
         {
             this.IsBusy = true;
-            await RefreshTrendingNewsAsync();
+            if (this.IsFilterOn == true)
+            {
+                await RefreshFilteredNewsAsync();
+            }
+            else
+            {
+                 await RefreshTrendingNewsAsync();
+
+            }
             this.IsBusy = false;
 
         }
 
         public async Task RefreshTrendingNewsAsync()
         {
+            this.TrendingNews.Clear();
             var news = await Helpers.NewsHelper.GetTrendingAsync();
+            foreach (var item in news)
+            {
+                this.TrendingNews.Add(item);
+            }
+        }
+
+        public async Task RefreshFilteredNewsAsync()
+        {
+            this.TrendingNews.Clear();
+
+            var news = await Helpers.NewsFilterHelper.GetFilteredNewsAsync();
             foreach (var item in news)
             {
                 this.TrendingNews.Add(item);

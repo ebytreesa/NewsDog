@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,18 +16,24 @@ namespace Newsdog
     {
         public MainPage()
         {
-            
-            InitializeComponent();
-        }
-
-        protected override void OnAppearing()
-        {
             if (App.ViewModel == null)
             {
                 App.ViewModel = new ViewModels.MainViewModel();
 
-                App.ViewModel.RefreshNewsAsync();
+               // App.ViewModel.RefreshNewsAsync();
             }
+            InitializeComponent();
+
+        }
+
+        protected override void OnAppearing()
+        {
+            //if (App.ViewModel == null)
+            //{
+            //    App.ViewModel = new ViewModels.MainViewModel();
+
+                App.ViewModel.RefreshNewsAsync();
+           // }
 
             App.MainNavigation = Navigation;
 

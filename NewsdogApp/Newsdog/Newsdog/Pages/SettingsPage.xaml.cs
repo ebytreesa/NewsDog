@@ -33,7 +33,7 @@ namespace Newsdog.Pages
             //};
             this.BindingContext = App.ViewModel;
             articleCountSlider.Value = 10;
-            categoryPicker.SelectedIndex = 2;
+            //categoryPicker.SelectedIndex = 2;
 
             var label = Helpers.GeneralHelper.GetLabel();
             var extendedLabel = Helpers.GeneralHelper.GetLabel("Running NewsDog on", true);

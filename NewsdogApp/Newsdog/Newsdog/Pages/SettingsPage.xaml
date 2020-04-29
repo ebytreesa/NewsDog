@@ -8,7 +8,21 @@
     <ContentPage.Content>
         <ScrollView>
         <StackLayout Margin="40" >
-            <Label Style="{x:DynamicResource TitleStyle}" Text="adjust your app settings" />
+                <!--<ContentView>
+                <OnPlatform x:TypeArguments="View">
+                    <OnPlatform.Android>
+                        <StackLayout Orientation="Horizontal" Margin="10">-->
+                            <Label  Style="{x:DynamicResource TitleStyle}" Text="News Filter"
+                            HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start"/>
+                <Switch IsToggled="{Binding IsFilterOn}" WidthRequest="100" HorizontalOptions="EndAndExpand"></Switch>
+                        <!--</StackLayout>
+                    </OnPlatform.Android>
+                </OnPlatform>
+                </ContentView>-->
+
+
+
+                <Label Style="{x:DynamicResource TitleStyle}" Text="adjust your app settings" />
             <Label  Style="{x:DynamicResource SubTitleStyle}" Text="Maximum articles to display"/>
             <Slider x:Name="articleCountSlider" Minimum="0" Maximum="20"/>
 
@@ -27,8 +41,8 @@
                 <Label Style="{x:DynamicResource SubtitleStyle}" Text="Device orientation:"/>
                 <Label FontAttributes="Bold" Style="{x:DynamicResource SubtitleStyle}" Text="{Binding CurrentOrientation}"/>
 
-                <Label Style="{x:DynamicResource SubTitleStyle}" Text="select a default news category"/>
-            <Picker x:Name="categoryPicker">
+                <!--<Label Style="{x:DynamicResource SubTitleStyle}" Text="select a default news category"/>-->
+            <!--<Picker x:Name="categoryPicker">
                 <Picker.Items>
                     <x:String>Business</x:String>
                     <x:String>Science and technology</x:String>
@@ -36,7 +50,7 @@
                     <x:String>Politics</x:String>
                     <x:String>Entertainment</x:String>                    
                 </Picker.Items>                
-            </Picker>
+            </Picker>-->
             <Button Text="save" Clicked="Button_Clicked"/>
 
 

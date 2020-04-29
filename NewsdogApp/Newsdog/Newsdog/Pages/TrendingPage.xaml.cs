@@ -19,6 +19,7 @@ namespace Newsdog.Pages
         protected override void OnAppearing()
         {
             //LoadNewsAsyncMethod();
+            bool x = App.ViewModel.IsFilterOn;
             this.BindingContext = App.ViewModel;
             base.OnAppearing();
         }

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Newsdog.Pages.CreateFilterPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label  Style="{x:DynamicResource TitleStyle}" Text="1. News Filter1" />
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+
+                <Entry Text="{Binding FilterTitle}" Grid.Row="1" Grid.Column="0"/>
+                <!--<Entry Text="{Binding Inputs.ElementAt(0)}" Grid.Row="1" Grid.Column="1"/>
+                <Entry Text="{Binding Inputs.ElementAt(0)}" Grid.Row="2" Grid.Column="1"/>-->
+                <!--<Entry Text="{Binding Inputs[2]}" Grid.Row="3" Grid.Column="1"/>-->
+            </Grid>
+
+            <!--<ListView x:Name="listView" ItemsSource="{Binding currentFilter}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+
+            <Button Text="Save" Command="{StaticResource SaveFilterItemCommand}" CommandParameter="{Binding .}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

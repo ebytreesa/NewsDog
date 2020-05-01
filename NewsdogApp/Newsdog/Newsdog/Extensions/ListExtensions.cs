@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newsdog.Data;
+using Newsdog.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +10,32 @@ namespace Newsdog
 {
     public static class ListExtensions
     {
+        public static NewsFilter AsNewsFilter(this NewsFilterTable filter)
+        {
+
+            return new NewsFilter()
+            {
+                FilterTitle = filter.FilterTitle,
+                //Input1 = filter.Inputs[0],
+                //Input2 = filter.Inputs[1],
+                //Input3 = filter.Inputs[2],
+                IsFilterOn = filter.IsFilterOn
+
+            };
+        }
+        public  static NewsFilterTable AsFilterTable(this NewsFilter filter)
+        {
+
+            return new NewsFilterTable()
+            {
+                FilterTitle = filter.FilterTitle,
+                //Input1 = filter.Inputs[0],
+                //Input2 = filter.Inputs[1],
+                //Input3 = filter.Inputs[2],
+                IsFilterOn = filter.IsFilterOn
+               
+            };
+        }
         public static News.NewsInformation AsArticle(this FavoriteInformation favorite)
         {
             return new News.NewsInformation()

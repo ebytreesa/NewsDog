@@ -13,6 +13,8 @@
             <command:RefreshNewsCommand x:Key="RefreshNewsCommand" />
             <command:SpeakCommand x:Key="SpeakCommand"/>
             <command:ToggleFavoriteCommand x:Key="ToggleFavoriteCommand"/>
+            <command:CreateFilterCommand x:Key="CreateFilterCommand"/>
+            <command:SaveFilterItemCommand x:Key="SaveFilterItemCommand"/>
 
 
 

@@ -4,6 +4,7 @@ C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\bin\Debug\net
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\bin\Debug\netstandard2.0\Newsdog.pdb
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\CreateFilterPage.xaml.g.cs
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\FavouritesPage.xaml.g.cs
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\ItemDetailPage.xaml.g.cs
 C:\Users\eby\Desktop\Xamarin\NewsdogApp\NewsdogApp\Newsdog\Newsdog\obj\Debug\netstandard2.0\Pages\ListViewPage1.xaml.g.cs

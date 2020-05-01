@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newsdog.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +8,78 @@ using System.Windows.Input;
 
 namespace Newsdog.Common.Commands
 {
+    public class SaveFilterItemCommand : ICommand
+    {
+        private bool _isBusy = false;
+
+        public event EventHandler CanExecuteChanged;
+
+        public bool CanExecute(object parameter)
+        {
+            return !_isBusy;
+        }
+
+        public void RaiseCanExecuteChanged()
+        {
+            var handler = CanExecuteChanged;
+            if (handler != null)
+            {
+                handler(this, EventArgs.Empty);
+            }
+        }
+
+        public async void Execute(object parameter)
+        {
+            SaveFilterAsync(parameter as NewsFilter);
+            await App.MainNavigation.PushAsync(new Pages.Page1(), true);
+
+        }
+
+        private async void SaveFilterAsync(NewsFilter filter)
+        {
+            this.RaiseCanExecuteChanged();
+           
+          int i =  await App.FilterDatabase.SaveItemAsync(filter.AsFilterTable());
+
+             App.FilterViewModel.NewsFilter.Add(filter);
+
+           // await App.ViewModel.Favorites.AddAsync(await article.AsFavorite("Technology"));
+
+            this.RaiseCanExecuteChanged();
+
+        }
+    }
+    public class CreateFilterCommand: ICommand
+    {
+
+        public event EventHandler CanExecuteChanged;
+
+        
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+
+        public void RaiseCanExecuteChanged()
+        {
+            var handler = CanExecuteChanged;
+            if (handler != null)
+            {
+                handler(this, EventArgs.Empty);
+            }
+        }
+
+        public void Execute(object parameter)
+        {
+            CreateFilterAsync();
+        }
+
+        private async void CreateFilterAsync()
+        {
+            await App.MainNavigation.PushAsync(new Pages.CreateFilterPage(), true);
+        }
+
+    }
     public class ToggleFavoriteCommand : ICommand
     {
         private bool _isBusy = false;

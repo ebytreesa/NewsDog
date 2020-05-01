@@ -16,10 +16,15 @@ namespace Newsdog.Pages
         {
             InitializeComponent();
         }
-
-        private async void Button_Clicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            await Navigation.PushAsync(new Pages.Page2());
+            corona.BindingContext = App.ViewModel;
+            list.BindingContext = App.FilterViewModel;
+            selectedFilter.BindingContext = App.FilterViewModel;
+
+            base.OnAppearing();
         }
+
+       
     }
 }

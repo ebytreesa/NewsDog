@@ -8,6 +8,22 @@ namespace Newsdog
     public partial class App : Application
     {
         static FavoritesDatabase database;
+        static FilterDatabase filterDatabase;
+
+        public static FilterDatabase FilterDatabase
+        {
+            get
+            {
+
+                if (filterDatabase == null)
+                {
+                    filterDatabase = new FilterDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("Filter.db3"));
+                }
+
+                return filterDatabase;
+            }
+
+        }
         public static FavoritesDatabase Database
         {
             get
@@ -23,6 +39,7 @@ namespace Newsdog
 
         }
         public static ViewModels.MainViewModel ViewModel { get; set; }
+        public static ViewModels.FilterNewsViewModel FilterViewModel { get; set; }
         public static INavigation MainNavigation { get; set; }
         public App()
         {

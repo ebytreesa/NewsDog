@@ -20,6 +20,8 @@ namespace Newsdog.Pages
         {
             //LoadNewsAsyncMethod();
             bool x = App.ViewModel.IsFilterOn;
+            App.ViewModel.RefreshNewsAsync();
+
             this.BindingContext = App.ViewModel;
             base.OnAppearing();
         }

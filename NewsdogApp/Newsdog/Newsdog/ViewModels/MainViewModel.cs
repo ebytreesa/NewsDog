@@ -11,15 +11,15 @@ namespace Newsdog.ViewModels
 {
     public class MainViewModel:ObservableBase
     {
-        private bool isFilterOn;
+        private bool isFilterOn = true;
         public bool IsFilterOn
         {
             get => Preferences.Get(nameof(IsFilterOn), this.isFilterOn);
             set
             {               
                 Preferences.Set(nameof(IsFilterOn), value);
-                 //this.SetProperty(ref this.isFilterOn, value); 
-                OnPropertyChanged(nameof(IsFilterOn));
+                 this.SetProperty(ref this.isFilterOn, value); 
+               // OnPropertyChanged(nameof(IsFilterOn));
             }
         }
         //public bool IsFilterOn

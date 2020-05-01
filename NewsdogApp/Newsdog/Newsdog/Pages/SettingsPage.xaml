@@ -8,17 +8,17 @@
     <ContentPage.Content>
         <ScrollView>
         <StackLayout Margin="40" >
-                <!--<ContentView>
+                <ContentView>
                 <OnPlatform x:TypeArguments="View">
                     <OnPlatform.Android>
-                        <StackLayout Orientation="Horizontal" Margin="10">-->
+                        <StackLayout Orientation="Horizontal" Margin="10">
                             <Label  Style="{x:DynamicResource TitleStyle}" Text="News Filter"
                             HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start"/>
-                <Switch IsToggled="{Binding IsFilterOn}" WidthRequest="100" HorizontalOptions="EndAndExpand"></Switch>
-                        <!--</StackLayout>
+                        <!--<Switch IsToggled="{Binding IsFilterOn}" WidthRequest="100" HorizontalOptions="EndAndExpand"></Switch>-->
+                        </StackLayout>
                     </OnPlatform.Android>
                 </OnPlatform>
-                </ContentView>-->
+                </ContentView>
 
 
 

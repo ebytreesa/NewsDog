@@ -7,8 +7,57 @@
              x:Class="Newsdog.Pages.Page1">
     <ContentPage.Content>
         <StackLayout Margin="40">
-            <Label Text="Page 1!" />
-            <Button Text="go to page 2" Clicked="Button_Clicked"></Button>
+            <Label  Style="{x:DynamicResource TitleStyle}" Text="Corona Filter"/>
+            <Switch x:Name="corona" IsToggled="{Binding IsFilterOn}" WidthRequest="100" HorizontalOptions="EndAndExpand"></Switch>
+            <Button Text="Create Filter" Command="{StaticResource CreateFilterCommand}"  />
+
+            <Label  Style="{x:DynamicResource TitleStyle}" Text="Select Filter"/>
+            <!--<Label  Style="{x:DynamicResource ListDescriptionStyle}" Text="{Binding NewsFilter.FilterTitle[0]}"/>-->
+            
+            
+
+            <Picker x:Name="list"  Title="Select filter" 
+                    BindingContext="{Binding FilterViewModel}"
+                ItemsSource="{Binding NewsFilter}"
+                ItemDisplayBinding="{Binding FilterTitle}"
+                SelectedItem="{Binding SelectedFilte }"/>
+            
+            <!--<Label Text="{Binding SelectedFilter}" WidthRequest="100" />-->
+            <Switch x:Name="selectedFilter" IsToggled="{Binding IsSelectedFilterOn}"  HorizontalOptions="EndAndExpand"></Switch>
+
+
+
+
+
+            <Grid>
+
+                <ListView  x:Name="list1" SeparatorVisibility="None"  HasUnevenRows="True" BindingContext="{Binding FilterViewModel}" ItemsSource="{Binding NewsFilter}" Margin="20">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Margin="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>                                       
+                                    </Grid.RowDefinitions>
+                                    <Label  Style="{x:DynamicResource ListDescriptionStyle}" Grid.Column="0" Text="{Binding FilterTitle}"/>
+
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+               
+
+            </Grid>
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

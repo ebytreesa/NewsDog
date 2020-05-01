@@ -11,28 +11,29 @@ namespace Newsdog
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
-    [DesignTimeVisible(false)]
+    //[DesignTimeVisible(false)]
     public partial class MainPage : TabbedPage
     {
         public MainPage()
         {
+            InitializeComponent();
             if (App.ViewModel == null)
             {
                 App.ViewModel = new ViewModels.MainViewModel();
-
-               // App.ViewModel.RefreshNewsAsync();
+                App.FilterViewModel = new ViewModels.FilterNewsViewModel();
             }
-            InitializeComponent();
 
         }
 
         protected override void OnAppearing()
         {
+            Console.WriteLine("hhhhh");
             //if (App.ViewModel == null)
             //{
             //    App.ViewModel = new ViewModels.MainViewModel();
-
+                var b = App.ViewModel.IsFilterOn;
                 App.ViewModel.RefreshNewsAsync();
+                 App.FilterViewModel.GetFiltersAsync();
            // }
 
             App.MainNavigation = Navigation;

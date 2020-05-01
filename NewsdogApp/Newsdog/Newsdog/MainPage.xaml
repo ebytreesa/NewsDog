@@ -15,8 +15,8 @@
     </TabbedPage.ToolbarItems>
     <TabbedPage.Children>
         <pages:TrendingPage Title="TRENDING"/>
-        <pages:TrendingPage Title="WORLD"/>
-        <!--<pages:TechnologyPage Title="TECHNOLOGY"/>-->
+        <!--<pages:TrendingPage Title="WORLD"/>-->
+        <pages:Page1 Title="Admin"/>
         <pages:FavouritesPage Icon="icon_favorites.png" Title="Favs"/>
         
 
